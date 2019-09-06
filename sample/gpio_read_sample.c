@@ -8,6 +8,7 @@
 
 // Access from ARM Running Linux
 
+
 #define BCM2708_PERI_BASE        0x3F000000
 #define GPIO_BASE                (BCM2708_PERI_BASE + 0x200000) /* GPIO controller */
 
@@ -20,6 +21,8 @@
 
 #define PAGE_SIZE (4*1024)
 #define BLOCK_SIZE (4*1024)
+
+
 
 int  mem_fd;
 void *gpio_map;
@@ -53,6 +56,7 @@ void printButton(int g)
 
 int main(int argc, char **argv)
 {
+  printf("DEBUG: running main\n");  
   int g,rep;
 
   // Set up gpi pointer for direct register access

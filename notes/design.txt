@@ -1,0 +1,46 @@
+PI PEDAL ("Alexander the Great")
+Nathaniel Lao
+Oscar Quintanilla
+9-6-19
+
+SUMMARY:
+Meeting notes from UMD concerning the basic operation, layout and uses of PI PEDAL.
+
+CONFIGURATION:
+-LCD GUI/Waveform viewer
+-3 push encoders
+  -each dedicated for frequency bandwidth
+  -push: change between amplification/frequency modification
+  -rotate: changes values
+-3 push buttons
+  -each dedicated for each encoder
+  -push: changes the curve shape:
+    -shelf
+    -cut
+    -boost
+-2 momentary foot switches:
+  bypass switch
+  auxilary switch for preset change
+
+
+ROUGH SKETCH:
+______________________________________________________
+|      ___               ___               ___       |
+|     /   \             /   \             /   \      |
+|     \___/             \___/             \___/      |
+|                                                    |
+|       O                 O                 O        |
+|  ________________________________________________  |
+|  |                                              |  |
+|  |                                              |  |
+|  |                                              |  |
+|  |                 WAVEFORM LCD                 |  |
+|  |                                              |  |
+|  |______________________________________________|  |
+|   ___                                      ___     |
+|  /   \                                    /   \    |
+|  \___/                                    \___/    |
+| BYPASS FS                                 AUX FS   |
+|____________________________________________________|
+
+

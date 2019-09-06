@@ -1,0 +1,10 @@
+9-6-19
+Uploaded and boot rasberry pi 2019-07-10-raspbian-buster-lite.img
+established ssh connection via p2p ethernet connection
+  pi@192.168.1.198 test123
+generated ssh keys for ssh login with Thinkpad
+made local directory for big files
+changed the sample code
+created deploy_sample.sh script
+changed line 11 of sample/gpio_access.c for Pi 3 utilization
+
