@@ -7,4 +7,4 @@ made local directory for big files
 changed the sample code
 created deploy_sample.sh script
 changed line 11 of sample/gpio_access.c for Pi 3 utilization
-
+pinout (python3-gpiozero) program installed on pi3

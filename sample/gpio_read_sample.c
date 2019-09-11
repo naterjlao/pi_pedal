@@ -73,6 +73,13 @@ int main(int argc, char **argv)
  \************************************************************************/
 
   // Set GPIO pins 7-11 to output
+  printf("DEBUG: setting 21 to input \n");
+  INP_GPIO(21);
+
+  while (1==1) {
+    printf("reading 21: %d\n", (int) GET_GPIO(21));
+  }
+#if 0 
   for (g=7; g<=11; g++)
   {
     INP_GPIO(g); // must use INP_GPIO before we can use OUT_GPIO
@@ -92,6 +99,7 @@ int main(int argc, char **argv)
        sleep(1);
      }
   }
+#endif
 
   return 0;
 

@@ -1,0 +1,5 @@
+gpio_read_sample.c works as a reader. Note that in READing the gpio,
+  INP_GPIO() does not need to be called, but it does not matter if it is.
+
+28 total gpio pins, 2 (0 and 1) are reserved -> 26 usable gpio pins
+
