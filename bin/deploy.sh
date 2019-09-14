@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PACKAGE_NAME=pi_pedal.zip
-TARGET=sample/
+TARGET=../pi_pedal/
 USERNAME=pi
 IP=192.168.1.198
 
