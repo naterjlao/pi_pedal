@@ -1,0 +1,25 @@
+ENCODER DATASHEET
+
+DIAGRAM:
+   a     b
+--------------
+|  ________  |
+| /        \ |
+| |        | |
+| |        | |
+| \________/ |
+|____________|
+   c  d  e
+
+PINOUT:
+a: +5v
+b: push button
+c: encoder trigger A
+d: +5v
+e: encoder trigger B
+
+NOTES:
+At neutral position, A and B will not close.
+In a clockwise turn, B will trigger then A
+In a counter-clockwise turn, A will trigger then B
+
