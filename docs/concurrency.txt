@@ -1,0 +1,16 @@
+The bootstrap will fork out the different processes for the pi pedal.
+IPC will be handled by shared memory, rather than using signals to process change in encoder state.
+
+Process:
+	main.x creates a shared memory file: encoder_data
+	encoder_date is truncated to NUM_ENCODERS * 2:
+		[2n] -> on/off button value [0,1]
+		[2n+1] -> rotational value [0,255] (since byte = 2^8)
+		where n is the encoder number
+	main.x spawns its process in n forks
+		each fork execs encoder_handler.x:
+			passes in n position as an argument
+			each processes handles the management of its own sector in encoder_data
+	main.x reads off data continuously and acts on changes.
+
+

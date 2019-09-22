@@ -1,0 +1,23 @@
+9-21-19
+created the template for the Makefile.
+For IPC - use shared memory. see sample/multithread for code
+
+
+9-20-19
+Created sample code for encoder
+Need to implement signal raise() and signal() to catch changes within loop.
+Concurrent processes need to be executed for mulitple encoder interfaces.
+  -Consider using fork() to branch out --- each having their own signal number
+
+
+9-6-19
+Uploaded and boot rasberry pi 2019-07-10-raspbian-buster-lite.img
+established ssh connection via p2p ethernet connection
+  pi@192.168.1.198 test123
+generated ssh keys for ssh login with Thinkpad
+made local directory for big files
+changed the sample code
+created deploy_sample.sh script
+changed line 11 of sample/gpio_access.c for Pi 3 utilization
+pinout (python3-gpiozero) program installed on pi3
+
