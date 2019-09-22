@@ -1,3 +1,8 @@
+9-21-19
+created the template for the Makefile.
+For IPC - use shared memory. see sample/multithread for code
+
+
 9-20-19
 Created sample code for encoder
 Need to implement signal raise() and signal() to catch changes within loop.

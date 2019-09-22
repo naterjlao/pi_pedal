@@ -3,4 +3,4 @@
 local/
 *.o
 *.x
-
+a.out
