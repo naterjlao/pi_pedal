@@ -1,11 +1,11 @@
 /******************************************************************************
-* File: gpio_setup.c
-* Language: C
-* Author: Nathaniel Lao (lao.nathan@yahoo.com)
-*
-* Setup script for Raspberry Pi 3 for GPIO access through memory registers
-* Based on https://elinux.org/RPi_GPIO_Code_Samples
-******************************************************************************/
+ * File: gpio_setup.c
+ * Language: C
+ * Author: Nathaniel Lao (lao.nathan@yahoo.com)
+ *
+ * Setup script for Raspberry Pi 3 for GPIO access through memory registers
+ * Based on https://elinux.org/RPi_GPIO_Code_Samples
+ ******************************************************************************/
 
 #define BCM2708_PERI_BASE        0x3F000000
 #define GPIO_BASE                (BCM2708_PERI_BASE + 0x200000) /* GPIO controller */
@@ -15,6 +15,9 @@
 #include <fcntl.h>
 #include <sys/mman.h>
 #include <unistd.h>
+
+//TODO add back
+//#include "gpio_setup.h"
 
 #define PAGE_SIZE (4*1024)
 #define BLOCK_SIZE (4*1024)
@@ -41,8 +44,7 @@ volatile unsigned *gpio;
 //
 // Set up a memory regions to access GPIO
 //
-void setup_io()
-{
+void setup_io() {
    /* open /dev/mem */
    if ((mem_fd = open("/dev/mem", O_RDWR|O_SYNC) ) < 0) {
       printf("can't open /dev/mem \n");
