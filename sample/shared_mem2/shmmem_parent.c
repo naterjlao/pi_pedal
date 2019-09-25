@@ -29,8 +29,8 @@ int main() {
 		char current_state = 0;
 		while(waitpid(pid,NULL,WNOHANG) == 0) {
 			if (current_state != *buffer) {
-				printf("%d\n",(int) *buffer);
 				current_state = *buffer;
+				printf("%d\n",(int) current_state);
 			}
 		}
 
