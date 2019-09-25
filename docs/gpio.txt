@@ -3,3 +3,33 @@ gpio_read_sample.c works as a reader. Note that in READing the gpio,
 
 28 total gpio pins, 2 (0 and 1) are reserved -> 26 usable gpio pins
 
+
+NOTES GPIOs:
+GPIO0: untested, no input
+GPIO1: output, no input
+GPIO2: output, no input
+GPIO3: output, no input
+GPIO4: output, no input
+GPIO5: output, no input
+GPIO6: output, no input
+GPIO7: output, no input
+GPIO8: output, no input (need retest -- pull down)
+GPIO9: output, input
+GPIO10: output, input
+GPIO11: output, input
+GPIO12: output, input
+GPIO13: output, input
+GPIO14: output, input
+GPIO15: output, no input (need retest -- pull down)
+GPIO16: output, input
+GPIO17: output, input
+GPIO18: output, input
+GPIO19: output, input
+GPIO20: output, input
+GPIO21: output, input
+GPIO22: output, input
+GPIO23: output, input
+GPIO24: output, input
+GPIO25: output, input
+GPIO26: output, input
+GPIO27: output, input
