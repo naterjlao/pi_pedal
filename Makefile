@@ -7,11 +7,12 @@ RFLAGS=-rvf
 
 all: main.x
 
-main.x: $(SRC_DIR)/main.c $(OBJ_DIR)/gpio_setup.o
-	$(CC) $(SRC_DIR)/main.c $(OBJ_DIR)/gpio_setup.o $(CFLAGS) -o main.x
+main.x: $(SRC_DIR)/main.c $(OBJ_DIR)/gpio.o
+	$(CC) $(SRC_DIR)/main.c $(OBJ_DIR)/gpio.o $(CFLAGS) -o main.x
 
-$(OBJ_DIR)/gpio_setup.o: $(SRC_DIR)/gpio_setup.c
-	$(CC) $(SRC_DIR)/gpio_setup.c -c $(CFLAGS) -o $(OBJ_DIR)/gpio_setup.o
+$(OBJ_DIR)/gpio.o: $(SRC_DIR)/gpio_setup.c
+	$(CC) $(SRC_DIR)/gpio.c -c $(CFLAGS) -o $(OBJ_DIR)/gpio.o
 
 clean:
 	rm $(RFLAGS) *.x $(OBJ_DIR)/*
+

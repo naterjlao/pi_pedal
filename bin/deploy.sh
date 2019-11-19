@@ -2,14 +2,8 @@
 
 PACKAGE_NAME=pi_pedal.zip
 TARGET=../pi_pedal/
-
-if ["$1" != ""]; then
-	USERNAME=pi
-	IP=192.168.1.198
-else
-	USERNAME=nlao
-	IP=192.168.56.3
-fi
+USERNAME=pi
+IP=192.168.1.198
 
 ./clean.sh
 cd ..
