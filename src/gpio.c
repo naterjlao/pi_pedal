@@ -44,7 +44,18 @@ void *gpio_map;
 // I/O access
 volatile unsigned *gpio;
 
-/* Set up memory regions to access GPIO */
+/*****************************************************************************
+* HELPER FUNCTIONS
+*****************************************************************************/
+int check_gpio(unsigned int g) {
+	//TODO check if the gpio number is in range
+	return 0;
+}
+
+
+/******************************************************************************
+* MAIN SETUP
+******************************************************************************/
 void setup_io() {
    /* open /dev/mem */
    if ((mem_fd = open("/dev/mem", O_RDWR|O_SYNC) ) < 0) {

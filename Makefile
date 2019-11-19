@@ -10,7 +10,7 @@ all: main.x
 main.x: $(SRC_DIR)/main.c $(OBJ_DIR)/gpio.o
 	$(CC) $(SRC_DIR)/main.c $(OBJ_DIR)/gpio.o $(CFLAGS) -o main.x
 
-$(OBJ_DIR)/gpio.o: $(SRC_DIR)/gpio_setup.c
+$(OBJ_DIR)/gpio.o: $(SRC_DIR)/gpio.c
 	$(CC) $(SRC_DIR)/gpio.c -c $(CFLAGS) -o $(OBJ_DIR)/gpio.o
 
 clean:

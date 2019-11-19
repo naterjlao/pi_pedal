@@ -5,3 +5,6 @@
 * GPIO interface with rotary encoders, buttons and LEDs
 * Graphical LCD/LED display
 * DSP interface
+
+NOTE: working pi is on 192.168.1.198
+
