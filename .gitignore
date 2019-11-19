@@ -4,3 +4,5 @@ local/
 *.o
 *.x
 a.out
+*.swp
+*.pdf
